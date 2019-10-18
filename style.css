@@ -38,6 +38,22 @@ ul {
   width: 100%;
 }
 
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #D36582;
+}
+
+a:active {
+  color: white;
+  background-color: #D36582;
+  padding: 2px;
+  border-radius: 2px;
+}
+
 .important:hover {
   color: #D36582;
   cursor: pointer;
@@ -101,7 +117,7 @@ ul {
 }
 
 .panel > *:first-child { transform:  translateY(-100%); }
-.panel:hover > *:first-child { transform:  translateY(100px); }
+.panel:hover > *:first-child { transform:  translateY(50%); }
 .panel.open-active > *:first-child { transform:  translateY(0); }
 .panel > *:last-child { transform:  translateY(200%); }
 .panel.open-active > *:last-child { transform:  translateY(0); }

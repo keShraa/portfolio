@@ -1,5 +1,6 @@
 body {
-  background-color: black;
+  background-color: #F4F4F4;
+  color: #202020;
   margin: 0;
   box-sizing: border-box;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
@@ -202,4 +203,26 @@ hr:after {
   padding: 12px;
   border-radius: 2px;
   width: 50%;
+}
+
+.banner {
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-end;
+  color: white;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.4);
+}
+
+.banner h1 {
+  font-size: 80px;
+}
+
+.banner i {
+  color: #D36582;
+  font-size: 32px;
 }

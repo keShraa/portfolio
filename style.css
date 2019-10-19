@@ -75,11 +75,6 @@ hr:after {
   color: #aaa;
 }
 
-.important:hover {
-  color: #D36582;
-  cursor: pointer;
-}
-
 .panels {
     height: 100vh;
     overflow: hidden;
@@ -163,6 +158,13 @@ hr:after {
   align-items: center;
 }
 
+.formations {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: justify;
+}
+
 #exp{
   font-size: 21px;
 }
@@ -174,8 +176,21 @@ hr:after {
   font-family: 'Ubuntu Mono', monospace;
 }
 
-i {
+.content i {
   font-size: 24px;
   margin: 0 0 8px 0;
   color: rgba(150,220,160,1);
+}
+
+.formations .important {
+  color: #D36582;
+}
+
+.formations .important:hover {
+  color: white;
+}
+
+.important:hover {
+  color: #D36582;
+  cursor: pointer;
 }

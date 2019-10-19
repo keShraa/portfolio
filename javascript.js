@@ -17,7 +17,6 @@ panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
 function typeEffect(element, speed) {
   const text = ">lignes de code...";
   element.innerHTML = "";
-  console.log("im in");
 
   let i = 0;
   const timer = setInterval(function() {

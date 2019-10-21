@@ -18,37 +18,141 @@
       style="background-image: linear-gradient(135deg, rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('images/archi.jpg');" >
       <div class="container">
         <div class="my-2">
-          <p class="m-0"><a href="index.html">Accueil</a> <i class="fas fa-chevron-right mx-2"></i> Archi 3D</p>
+          <p class="m-0"><a href="index.html">Accueil</a> <i class="fas fa-chevron-right mx-2"></i> Architecture 3D</p>
         </div>
-        <h1>Architecture 3D</h1>
+        <h1>Création de rendus graphiques 3D d'un loft</h1>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container projects">
+      <p class="shade">
+        <strong>Infographiste 3D - Glyndwr University à Wrexham au Royaume-Uni</strong><br>
+        <em>Stage de 6 mois lors de la Licence Professionnelle Techniques et Activités de l'Image et du Son</em>
+      </p>
 
-      <!-- Carousel images du loft -->
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="images/projet1/Cuisine_001.bmp" alt="Kitchen">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="images/projet1/Cuisine_002.bmp" alt="Kitchen">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="images/projet1/Cuisine_003.bmp" alt="Kitchen">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+      <p>
+        <span style="font-size: 48px; font-weight: bolder;">C</span>e projet consiste en la réalisation d'une plaquette d'architecture, sur la suite <strong>Adobe</strong> <img src="images/logos/adobe.png" alt="Logo Adobe" style="height: 36px;"> contenant les divers rendus 3D modélisés sous le logiciel <strong>NewTek LightWave</strong>. <img src="images/logos/lightwave.png" alt="Logo LightWave" style="height: 36px;">
+      </p>
+
+      <div class="row d-flex justify-content-center align-items-center flex-column mb-5">
+        <img src="images/render.png" style="width: 70%;" onclick="openModal();currentSlide(1)" class="render
+        cursor">
+        <h2><i class="fas fa-hand-pointer"></i></h2>
       </div>
+
+      <h2>Modélisation 3D, Texturing avec le logiciel Newtek LightWave</h2>
+
+      <p>
+        J'ai commencé par créer des plans d'un loft afin de les modéliser en 3D sur la partie <strong>modeler</strong> du logiciel. Ensuite, s'enchaîne un travail de <em>«Texturing»</em> où j'ai opté pour un rendu réaliste afin que le client puisse se projeter dans son futur loft.
+      </p>
+
+      <div class="text-center mb-4">
+        <img src="images/layout.jpg" alt="Interface logiciel LightWave" width="100%">
+      </div>
+
+      <p>
+        Finalement, il faut ajouter des sources de lumière et des caméras dans la partie <strong>layout</strong> du logiciel afin de réaliser les différents rendus.
+      </p>
+
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 7</div>
+            <img src="images/projet1/Cuisine_001.bmp" alt="Cuisine" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 7</div>
+            <img src="images/projet1/Cuisine_002.bmp" alt="Cuisine" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 7</div>
+            <img src="images/projet1/Cuisine_003.bmp" alt="Cuisine" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 7</div>
+            <img src="images/projet1/Salle_de_bain_001.bmp" alt="Salle de bain" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 7</div>
+            <img src="images/projet1/Salle_de_bain_002.bmp" alt="Salle de bain" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 7</div>
+            <img src="images/projet1/Sauna_001.bmp" alt="Sauna" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">7 / 7</div>
+            <img src="images/projet1/Sauna_002.bmp" alt="Sauna" style="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+      </div>
+
+      <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
     </div>
 
+    <div class="footer">
+      <div id="button"></div>
+      <div id="container">
+        <div id="cont">
+          <div class="footer_center d-flex align-items-end justify-content-center">
+            <a href="index.html"><i class="fas fa-home mx-2"></i>Home</a>
+            <a href="qultur.html"><i class="fas fa-mobile-alt mx-2"></i>QultuR</a>
+            <a href="architecture.html" class="active"><i class="fas fa-draw-polygon mx-2 active"></i>Architecture 3D</a>
+            <a href="logiciel.html"><i class="fas fa-desktop mx-2"></i>POV-Ray</a>
+            <a href="https://www.linkedin.com/in/julien-legay-a116ba181/" target="_blank"><i class="fab fa-linkedin mx-2"></i>LinkedIn</a>
+            <a href="https://github.com/keShraa" target="_blank"><i class="fab fa-github-square mx-2"></i>GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
